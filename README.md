@@ -1,5 +1,7 @@
 # ◈ GENESIS — Virtual Linux Laboratory
 
+![GENESIS Virtual Linux Laboratory](assets/genesis-cover.png)
+
 A local-first **FastAPI + SQLite + libvirt** app for defining Linux learning labs, planning QEMU/KVM virtual machines, viewing a relationship map, recording actions, and tracking hands-on engineering challenges.
 
 **Honest feature status:** Real VM provisioning uses `virt-install` on the **host machine**. VM creation has not been tested on a real Fedora/libvirt host in this build environment; test with a disposable ISO and confirm permissions. Browser VM consoles, arbitrary drag-and-drop networking, automatic grading, snapshots/rollback, and AI instructors are **not implemented** in v1. The visualization is an inventory graph, not a network emulator. The VM provisioning path uses the libvirt default network (typically NAT) and may create disks and boot a VM when you explicitly confirm. There are no VM delete operations.
